@@ -6,7 +6,7 @@
   "module": "sealsc-web-extension-protocol",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sealsc/sealsc-web-extension-protocol.git"
+    "url": "git+https://github.com/SealSC/web-extension-protocol.git"
   },
   "keywords": [
     "Seal SC",
