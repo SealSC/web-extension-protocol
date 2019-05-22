@@ -6,7 +6,7 @@ class ExtensionConnector {
     this.extension = extension
   }
 
-  async link() { return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
+  async link(param) { return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
   async unlink() { return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
 
 }
