@@ -18,7 +18,7 @@ import "@sealsc/web-extension-protocol"
 ```
 
 ### Documentation
-Coming soon.
+[Seal SC web extension protocol](https://sealsc.github.io/documents/en/web-extensions/protocol/)
 
 ### License
 The source is made available under the MIT license.
