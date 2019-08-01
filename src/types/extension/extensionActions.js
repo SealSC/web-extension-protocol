@@ -10,6 +10,7 @@ class ExtensionActions {
   async transfer(to, amount, memo, extra) {return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
   async transferToken(wrapper, to, amount, extra) {return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
   async getAccount() {return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
+  async invoke(methods, ...args) {return new Result(null, predefinedStatus.NOT_SUPPORT(null))}
 }
 
 export {
