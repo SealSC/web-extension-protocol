@@ -5866,11 +5866,11 @@ function () {
   }
 
   (0, _createClass2["default"])(ExtensionActions, [{
-    key: "contractOffChainCall",
+    key: "loadContract",
     value: function () {
-      var _contractOffChainCall = (0, _asyncToGenerator2["default"])(
+      var _loadContract = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee() {
+      _regenerator["default"].mark(function _callee(abi, address) {
         return _regenerator["default"].wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -5885,18 +5885,18 @@ function () {
         }, _callee);
       }));
 
-      function contractOffChainCall() {
-        return _contractOffChainCall.apply(this, arguments);
+      function loadContract(_x, _x2) {
+        return _loadContract.apply(this, arguments);
       }
 
-      return contractOffChainCall;
+      return loadContract;
     }()
   }, {
-    key: "invokeContract",
+    key: "transfer",
     value: function () {
-      var _invokeContract = (0, _asyncToGenerator2["default"])(
+      var _transfer = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee2() {
+      _regenerator["default"].mark(function _callee2(to, amount, memo, extra) {
         return _regenerator["default"].wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -5911,18 +5911,18 @@ function () {
         }, _callee2);
       }));
 
-      function invokeContract() {
-        return _invokeContract.apply(this, arguments);
+      function transfer(_x3, _x4, _x5, _x6) {
+        return _transfer.apply(this, arguments);
       }
 
-      return invokeContract;
+      return transfer;
     }()
   }, {
-    key: "loadContract",
+    key: "transferToken",
     value: function () {
-      var _loadContract = (0, _asyncToGenerator2["default"])(
+      var _transferToken = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee3() {
+      _regenerator["default"].mark(function _callee3(wrapper, to, amount, extra) {
         return _regenerator["default"].wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
@@ -5937,16 +5937,16 @@ function () {
         }, _callee3);
       }));
 
-      function loadContract() {
-        return _loadContract.apply(this, arguments);
+      function transferToken(_x7, _x8, _x9, _x10) {
+        return _transferToken.apply(this, arguments);
       }
 
-      return loadContract;
+      return transferToken;
     }()
   }, {
-    key: "transfer",
+    key: "getAccount",
     value: function () {
-      var _transfer = (0, _asyncToGenerator2["default"])(
+      var _getAccount = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
       _regenerator["default"].mark(function _callee4() {
         return _regenerator["default"].wrap(function _callee4$(_context4) {
@@ -5963,18 +5963,18 @@ function () {
         }, _callee4);
       }));
 
-      function transfer() {
-        return _transfer.apply(this, arguments);
+      function getAccount() {
+        return _getAccount.apply(this, arguments);
       }
 
-      return transfer;
+      return getAccount;
     }()
   }, {
-    key: "transferToken",
+    key: "invoke",
     value: function () {
-      var _transferToken = (0, _asyncToGenerator2["default"])(
+      var _invoke = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee5() {
+      _regenerator["default"].mark(function _callee5(methods) {
         return _regenerator["default"].wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
@@ -5989,37 +5989,11 @@ function () {
         }, _callee5);
       }));
 
-      function transferToken() {
-        return _transferToken.apply(this, arguments);
+      function invoke(_x11) {
+        return _invoke.apply(this, arguments);
       }
 
-      return transferToken;
-    }()
-  }, {
-    key: "getAccount",
-    value: function () {
-      var _getAccount = (0, _asyncToGenerator2["default"])(
-      /*#__PURE__*/
-      _regenerator["default"].mark(function _callee6() {
-        return _regenerator["default"].wrap(function _callee6$(_context6) {
-          while (1) {
-            switch (_context6.prev = _context6.next) {
-              case 0:
-                return _context6.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
-
-              case 1:
-              case "end":
-                return _context6.stop();
-            }
-          }
-        }, _callee6);
-      }));
-
-      function getAccount() {
-        return _getAccount.apply(this, arguments);
-      }
-
-      return getAccount;
+      return invoke;
     }()
   }]);
   return ExtensionActions;
@@ -6176,7 +6150,7 @@ function () {
     value: function () {
       var _link = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee() {
+      _regenerator["default"].mark(function _callee(param) {
         return _regenerator["default"].wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -6191,7 +6165,7 @@ function () {
         }, _callee);
       }));
 
-      function link() {
+      function link(_x) {
         return _link.apply(this, arguments);
       }
 
@@ -6264,7 +6238,7 @@ function () {
     value: function () {
       var _onChainCall = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee() {
+      _regenerator["default"].mark(function _callee(wrapper, method, param, amount, extra) {
         return _regenerator["default"].wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -6279,7 +6253,7 @@ function () {
         }, _callee);
       }));
 
-      function onChainCall() {
+      function onChainCall(_x, _x2, _x3, _x4, _x5) {
         return _onChainCall.apply(this, arguments);
       }
 
@@ -6290,7 +6264,7 @@ function () {
     value: function () {
       var _offChainCall = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee2() {
+      _regenerator["default"].mark(function _callee2(wrapper, method, param) {
         return _regenerator["default"].wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -6305,7 +6279,7 @@ function () {
         }, _callee2);
       }));
 
-      function offChainCall() {
+      function offChainCall(_x6, _x7, _x8) {
         return _offChainCall.apply(this, arguments);
       }
 
