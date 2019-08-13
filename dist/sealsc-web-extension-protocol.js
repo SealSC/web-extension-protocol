@@ -5970,11 +5970,11 @@ function () {
       return getAccount;
     }()
   }, {
-    key: "invoke",
+    key: "getTransaction",
     value: function () {
-      var _invoke = (0, _asyncToGenerator2["default"])(
+      var _getTransaction = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee5(methods) {
+      _regenerator["default"].mark(function _callee5(txHash) {
         return _regenerator["default"].wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
@@ -5989,7 +5989,59 @@ function () {
         }, _callee5);
       }));
 
-      function invoke(_x11) {
+      function getTransaction(_x11) {
+        return _getTransaction.apply(this, arguments);
+      }
+
+      return getTransaction;
+    }()
+  }, {
+    key: "getTokenInfo",
+    value: function () {
+      var _getTokenInfo = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee6(tokenAddress, abi) {
+        return _regenerator["default"].wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                return _context6.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6);
+      }));
+
+      function getTokenInfo(_x12, _x13) {
+        return _getTokenInfo.apply(this, arguments);
+      }
+
+      return getTokenInfo;
+    }()
+  }, {
+    key: "invoke",
+    value: function () {
+      var _invoke = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee7(methods) {
+        return _regenerator["default"].wrap(function _callee7$(_context7) {
+          while (1) {
+            switch (_context7.prev = _context7.next) {
+              case 0:
+                return _context7.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context7.stop();
+            }
+          }
+        }, _callee7);
+      }));
+
+      function invoke(_x14) {
         return _invoke.apply(this, arguments);
       }
 
