@@ -5970,11 +5970,11 @@ function () {
       return getAccount;
     }()
   }, {
-    key: "getTransaction",
+    key: "getCurrentHeight",
     value: function () {
-      var _getTransaction = (0, _asyncToGenerator2["default"])(
+      var _getCurrentHeight = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee5(txHash) {
+      _regenerator["default"].mark(function _callee5() {
         return _regenerator["default"].wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
@@ -5989,18 +5989,18 @@ function () {
         }, _callee5);
       }));
 
-      function getTransaction(_x11) {
-        return _getTransaction.apply(this, arguments);
+      function getCurrentHeight() {
+        return _getCurrentHeight.apply(this, arguments);
       }
 
-      return getTransaction;
+      return getCurrentHeight;
     }()
   }, {
-    key: "getTokenInfo",
+    key: "getBlockByHeight",
     value: function () {
-      var _getTokenInfo = (0, _asyncToGenerator2["default"])(
+      var _getBlockByHeight = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee6(tokenAddress, abi) {
+      _regenerator["default"].mark(function _callee6(height) {
         return _regenerator["default"].wrap(function _callee6$(_context6) {
           while (1) {
             switch (_context6.prev = _context6.next) {
@@ -6015,18 +6015,18 @@ function () {
         }, _callee6);
       }));
 
-      function getTokenInfo(_x12, _x13) {
-        return _getTokenInfo.apply(this, arguments);
+      function getBlockByHeight(_x11) {
+        return _getBlockByHeight.apply(this, arguments);
       }
 
-      return getTokenInfo;
+      return getBlockByHeight;
     }()
   }, {
-    key: "invoke",
+    key: "getBlockByHash",
     value: function () {
-      var _invoke = (0, _asyncToGenerator2["default"])(
+      var _getBlockByHash = (0, _asyncToGenerator2["default"])(
       /*#__PURE__*/
-      _regenerator["default"].mark(function _callee7(methods) {
+      _regenerator["default"].mark(function _callee7(hash) {
         return _regenerator["default"].wrap(function _callee7$(_context7) {
           while (1) {
             switch (_context7.prev = _context7.next) {
@@ -6041,7 +6041,111 @@ function () {
         }, _callee7);
       }));
 
-      function invoke(_x14) {
+      function getBlockByHash(_x12) {
+        return _getBlockByHash.apply(this, arguments);
+      }
+
+      return getBlockByHash;
+    }()
+  }, {
+    key: "getBalance",
+    value: function () {
+      var _getBalance = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee8(address, token, abi) {
+        return _regenerator["default"].wrap(function _callee8$(_context8) {
+          while (1) {
+            switch (_context8.prev = _context8.next) {
+              case 0:
+                return _context8.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context8.stop();
+            }
+          }
+        }, _callee8);
+      }));
+
+      function getBalance(_x13, _x14, _x15) {
+        return _getBalance.apply(this, arguments);
+      }
+
+      return getBalance;
+    }()
+  }, {
+    key: "getTransaction",
+    value: function () {
+      var _getTransaction = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee9(txHash) {
+        return _regenerator["default"].wrap(function _callee9$(_context9) {
+          while (1) {
+            switch (_context9.prev = _context9.next) {
+              case 0:
+                return _context9.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context9.stop();
+            }
+          }
+        }, _callee9);
+      }));
+
+      function getTransaction(_x16) {
+        return _getTransaction.apply(this, arguments);
+      }
+
+      return getTransaction;
+    }()
+  }, {
+    key: "getTokenInfo",
+    value: function () {
+      var _getTokenInfo = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee10(tokenAddress, abi) {
+        return _regenerator["default"].wrap(function _callee10$(_context10) {
+          while (1) {
+            switch (_context10.prev = _context10.next) {
+              case 0:
+                return _context10.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context10.stop();
+            }
+          }
+        }, _callee10);
+      }));
+
+      function getTokenInfo(_x17, _x18) {
+        return _getTokenInfo.apply(this, arguments);
+      }
+
+      return getTokenInfo;
+    }()
+  }, {
+    key: "invoke",
+    value: function () {
+      var _invoke = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee11(methods) {
+        return _regenerator["default"].wrap(function _callee11$(_context11) {
+          while (1) {
+            switch (_context11.prev = _context11.next) {
+              case 0:
+                return _context11.abrupt("return", new _result.Result(null, _predefinedStatus.predefinedStatus.NOT_SUPPORT(null)));
+
+              case 1:
+              case "end":
+                return _context11.stop();
+            }
+          }
+        }, _callee11);
+      }));
+
+      function invoke(_x19) {
         return _invoke.apply(this, arguments);
       }
 

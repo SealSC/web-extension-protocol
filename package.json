@@ -1,6 +1,6 @@
 {
   "name": "@sealsc/web-extension-protocol",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Uniform blockchain web extension interface protocol.",
   "main": "src/protocol.js",
   "module": "sealsc-web-extension-protocol",
